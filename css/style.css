@@ -1078,9 +1078,9 @@ Parallax
  	   padding: 0px 45px;
 	}
 	.photo {
- 	   padding: 0px 50px;
+ 	   padding: 0px 27%;
  	   margin: 0 auto:;
- 	   
+ 	   clear:both;
 
 	}
 	
@@ -1178,7 +1178,7 @@ Parallax
  	   padding: 0px 18px;
 	}
 	.photo {
-		margin-left:20px;
+		padding: 0px 12%;
 	}
 	.form2 .title {
 		font-size:22px;
