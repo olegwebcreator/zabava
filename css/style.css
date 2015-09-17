@@ -218,6 +218,19 @@ a:hover, a:focus, a:link {
 .navbar-custom .nav li.active .round-btn .inside-btn{
     background: #000;
 }
+.visited-btn{
+	background-image:url('../images/galka.png');
+	width:26px;
+	height:26px;
+	margin-top: -7px;
+	margin-left: -5px;
+	visibility:hidden;
+	display:none;
+}
+.navbar-custom .nav li.visited .visited-btn {
+	visibility: visible;
+	display: block;
+}
 .navbar-custom .nav li a:hover .round-btn,
 .navbar-custom .nav li a:focus .round-btn,
 .navbar-custom .nav li.active .round-btn {
@@ -351,7 +364,7 @@ section .heading h4 {
 	background: linear-gradient(to bottom,  #fbd36c 0%,#e19a29 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbd36c', endColorstr='#e19a29',GradientType=0 ); /* IE6-8 */
 }
-.sprite{position: fixed;background-position: 50% 0%;background-size: 100%;background-repeat: no-repeat;z-index:-1;}
+.sprite{position: fixed;background-position: 50% 0%;background-size: 100%;background-repeat: no-repeat;z-index:1;}
 .before,.after {float:left;}
 .bef, .aft {position:relative;display:block;top: -40px;z-index: 100;width: 50%;}
 .bef {color:#FFF;background:#000;margin-left: 50%;}
