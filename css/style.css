@@ -647,7 +647,8 @@ ul.list-style li {text-align:left;font-size:16px;}
 	section .heading h4 {font-size:18px;}
 	#intro form .title {font-size:15px;}
 	#intro form .subtitle {font-size:20px;}
-	
+	#result .form input {padding:0 20px;}
+	#otziv .form .input {padding:0 20px;}
 	.mobile {margin-top:-60px;}
 	#program .formTitle {font-size:24px;}
 	#program .advert {font-size:16px;margin-top:20px;}
