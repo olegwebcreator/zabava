@@ -635,6 +635,7 @@
 			            $(this).removeClass('active');
 			        });
 		            $(this).addClass('active');
+		            $(this).addClass('visited');
 		        });
 		        
 				
@@ -659,6 +660,7 @@
 				});
 				
 				$( document ).ready(function() {
+					$('#myCarousel').carousel({interval: 10000});
 					$('.navbar-nav li').each(function() {
 						if ($(this).data('slideTo')==0) {
 				      			$(this).addClass('active');	
