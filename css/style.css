@@ -208,11 +208,11 @@ a:hover, a:focus, a:link {
 	margin-top: 2px;
 }
 .navbar-footer {
-	width:190px;
 	text-align:right;
 	float:right;	
 	padding-top:13px;
 }
+address {margin-bottom:0px;}
 .navbar-custom .nav li a:hover .round-btn .inside-btn,
 .navbar-custom .nav li a:focus .round-btn .inside-btn,
 .navbar-custom .nav li.active .round-btn .inside-btn{
@@ -598,7 +598,7 @@ ul.list-style li {text-align:left;font-size:16px;}
 		height: 100%;
 		padding-top: 70%;
 		position: relative;
-		margin-top: -80px;
+		margin-top: -60px;
    	}
    	svg {
 	   	position:absolute;
@@ -650,6 +650,7 @@ ul.list-style li {text-align:left;font-size:16px;}
 	.carousel-control {
 		position:fixed;
 	}
+	
 }
 
 @media(max-width:480px) {
