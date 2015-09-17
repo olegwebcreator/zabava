@@ -198,7 +198,7 @@
 				
 				<!-- Third Slide -->
 								
-				<div class="item slide2 active">
+				<div class="item slide2">
 	            	<div class="fill">
 						<section id="component" class="home-section">
 							<div class="heading">
@@ -666,7 +666,18 @@
 					});
 					
 				});
-				
+		</script>
+		<script>
+				$(window).bind('mousewheel DOMMouseScroll', function(event){
+				    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+				        // scroll up
+				        $("#myCarousel").carousel('next');
+				    }
+				    else {
+				        // scroll down
+				        $("#myCarousel").carousel('prev');
+				    }
+				});
 		</script>
 
 		<script type="text/javascript"> 
