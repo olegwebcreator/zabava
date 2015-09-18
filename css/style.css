@@ -165,7 +165,7 @@ a:hover, a:focus, a:link {
 	letter-spacing: 1px;
     color:#331f06;
 	font-weight: normal;
-	padding:10px;
+	//padding:10px;
 	webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -608,8 +608,44 @@ ul.list-style li {text-align:left;font-size:16px;}
    	
 	
 }
+@media(min-width:767px) {
+	.navbar-footer {
+		position: fixed;
+		right: 10px;
+		top: 10px;
+		font-size: 12px;
+		
+	}
+	.navbar-custom ul.nav li {
+		font-size:10px;
+		padding:12px 4px;
+	}
+	#program .form {background:none;}
+	.map {margin:10px auto;}
+	
+}
+@media(min-width:992px) {
+	.navbar-custom ul.nav li {
+		font-size:14px;
+		padding:10px;
+	}
+	.navbar-footer {
+		position: inherit;
+		margin-right: 10px;
+		//top: 10px;
+		font-size: 12px;
+		
+	}
+
+}
+
 @media(max-width:768px) {
 	.container {max-width:740px;}
+	.navbar-custom ul.nav li {
+		padding:10px;
+	}
+	
+
 	.navbar-toggle{font-size:40px;}
 	.navbar-left {width:100%;}
 	.topline {
