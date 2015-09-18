@@ -20,6 +20,8 @@
 	    <!-- Theme CSS -->
 	    <link href="css/style.css" rel="stylesheet">
 		<link href="color/default.css" rel="stylesheet">
+		<script type="text/javascript" src="//cdn.callbackhunter.com/cbh.js?hunter_code=900ac22b675fa43c79ffec3a25a8b2ce" charset="UTF-8"></script>
+		
 	</head>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 		<!-- Preloader -->
@@ -101,7 +103,6 @@
             </div>
             <!-- /.container -->
 		</nav>
-		<script type="text/javascript" src="//cdn.callbackhunter.com/cbh.js?hunter_code=900ac22b675fa43c79ffec3a25a8b2ce" charset="UTF-8"></script>
 		<header id="myCarousel" class="carousel slide">
 			<!-- Wrapper for Slides -->
 			<div class="carousel-inner">
@@ -138,7 +139,7 @@
 													<input type="phone" class="form-control" id="phone" placeholder="Ваш телефон" required="required">
 												</div>
 												<div class="form-group input">
-													<button type="submit" class="btn btn-default btn-confirm">Записаться</button>
+													<button id="s0" type="submit" class="btn btn-default btn-confirm">Записаться</button>
 												</div>
 											</form>
 										</div>
@@ -190,7 +191,7 @@
 												</div>
 														
 												<div class="form-group input">
-													<button type="submit" class="btn btn-default btn-confirm">Записаться</button>
+													<button id="s1" type="submit" class="btn btn-default btn-confirm">Записаться</button>
 												</div>
 											</form>	
 										</div>
@@ -446,7 +447,7 @@
 														<input type="phone" class="form-control" id="InputPhone" placeholder="Ваш телефон" required="required">
 									  				</div>
 									  				<div class="form-group input">
-									  					<button type="submit" class="btn btn-default btn-confirm">Записаться</button>
+									  					<button id="s2" type="submit" class="btn btn-default btn-confirm">Записаться</button>
 									  				</div>
 												</form>	
 											</div>
@@ -485,7 +486,7 @@
 																
 												<div class='advert'>Подарите себе здоровые волосы <span>ВСЕГО ЗА 2990 руб</span></div>
 												<div class="form-group input">
-													<button type="submit" class="btn btn-default btn-confirm">Записаться</button>
+													<button id="s3" type="submit" class="btn btn-default btn-confirm">Записаться</button>
 												</div>
 											</form>	
 										</div>
@@ -547,7 +548,7 @@
 											<h5>Абсолютное счастье на всю длину волос <span>ВСЕГО ЗА 2999 руб</span></h5>
 												<form role="form" class='form'>
 													<div class="form-group input">
-														<button type="submit" class="btn btn-default btn-confirm">Записаться</button>
+														<button id="s4" type="submit" class="btn btn-default btn-confirm">Записаться</button>
 													</div>
 												</form>	
 										</div>								
@@ -592,7 +593,7 @@
 														<input type="phone" class="form-control" id="InputPhone" placeholder="Ваш телефон" required="required">
 													</div>
 													<div class="form-group input">
-														<button type="submit" class="btn btn-default btn-confirm">Записаться</button>
+														<button id="s5" type="submit" class="btn btn-default btn-confirm">Записаться</button>
 													</div>
 												</form>	
 											</div>
@@ -637,6 +638,31 @@
 		<script src="js/custom.js"></script>
 		
 		<script type="text/javascript">
+				$( document ).ready(function() {
+					$("a.fancyimage").fancybox(); 
+					$('#myCarousel').carousel({ interval: false });
+					$("#s1").click(function(){
+						$("#myCarousel").carousel(5);
+						return false;
+					});
+					$("#s3").click(function(){
+						$("#myCarousel").carousel(5);
+						return false;
+					});
+					$("#s4").click(function(){
+						$("#myCarousel").carousel(5);
+						return false;
+					});
+					
+					$('.navbar-nav li').each(function() {
+						if ($(this).data('slideTo')==0) {
+				      			$(this).addClass('active');	
+				      			$(this).addClass('visited');
+			      		}	
+					});
+										
+				});
+				
 	            $( document ).on( 'click', '.navbar-nav li', function () {
 		            $('.navbar-nav li').each(function() {
 			            $(this).removeClass('active');
@@ -645,14 +671,12 @@
 		            $(this).addClass('visited');
 		        });
 		        
-				
-				
-				$(function(){
-		    		$('#myCarousel').on('slide.bs.carousel', function () {
+		        $(function(){
+		    		$('#myCarousel').on('slid.bs.carousel', function () {
 			    		var carouselData = $(this).data('bs.carousel');
 		      			var currentIndex = carouselData.getActiveIndex();
 		      			
-		      			var nextIndex = currentIndex + 1;
+		      			var nextIndex = currentIndex;
 		      			if (nextIndex == 6) {
 			      			nextIndex = 0;
 		      			}
@@ -660,39 +684,29 @@
 			      			$(this).removeClass('active');
 			      			if ($(this).data('slideTo')==nextIndex) {
 				      			$(this).addClass('active');	
+				      			$(this).addClass('visited');
 			      			}
 			      		});
 			      		
 			      	});
 				});
-				
-				$( document ).ready(function() {
-					$('#myCarousel').carousel({interval: 10000});
-					$('.navbar-nav li').each(function() {
-						if ($(this).data('slideTo')==0) {
-				      			$(this).addClass('active');	
-			      		}	
-					});
-					
-				});
-		</script>
-		<script>
 				$(window).bind('mousewheel DOMMouseScroll', function(event){
 				    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
 				        // scroll up
-				        $("#myCarousel").carousel('next');
+				        $("#myCarousel").carousel('prev');
 				    }
 				    else {
 				        // scroll down
-				        $("#myCarousel").carousel('prev');
+				        $("#myCarousel").carousel('next');
 				    }
 				});
+				
+		</script>
+		<script>
+			/*
+				
+				*/
 		</script>
 
-		<script type="text/javascript"> 
-		      $(document).ready(function() { 
-		        $("a.fancyimage").fancybox(); 
-		      }); 
-		</script>
 	</body>
 </html>

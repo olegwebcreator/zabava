@@ -582,6 +582,13 @@ ul.list-style li {text-align:left;font-size:16px;}
 	section {min-height:632px;max-height:632px;}
 	#otziv .col-md-6 {width:47%!important;}
 	.box-wht {padding-bottom:10px;}
+	.navbar-footer {
+		position: inherit;
+		margin-right: 10px;
+		//top: 10px;
+		font-size: 12px;
+		
+	}
 }
 	@media(max-width:1024px) {
 	.container {
@@ -630,7 +637,7 @@ ul.list-style li {text-align:left;font-size:16px;}
 		padding:10px;
 	}
 	.navbar-footer {
-		position: inherit;
+		position: fixed;
 		margin-right: 10px;
 		//top: 10px;
 		font-size: 12px;
