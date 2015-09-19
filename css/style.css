@@ -1105,7 +1105,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		visibility: visible;
 		display:block;
 		position: absolute;
-		top: -50px;
+		top: -60px;
 		left:0;
 		width:100%;
 		height:auto;
@@ -1113,7 +1113,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
    	}
    	.form-wrapper {
 	   	position: relative;
-	   	top: 250px;
+	   	top: 200px;
    	}
    	.mobile svg {
 	   	margin:0 auto;
