@@ -562,6 +562,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 		background:none;
 	}
 	.map {margin:0 auto;margin-top:20px;}
+	/*
 	.workstation {
 		visibility: hidden;
 		display:none;
@@ -583,6 +584,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	   	height:100%;
 	   	
    	}
+   	*/
    	.navbar .navbar-footer {
 	   	position: relative;
 	   	//top: -66px;
@@ -621,7 +623,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	.container {
 		max-width:1000px;
 	}
-	
+	/*
 	.mobile {
 		visibility: hidden;
 		display:none;
@@ -640,6 +642,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	   	top:-155px;;
 	   	left:0;
    	}
+   	*/
 	section {min-height:632px;max-height:632px;}
 	#otziv .col-md-6 {width:47%!important;}
 	.box-wht {padding-bottom:10px;}
@@ -656,7 +659,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	#intro form .subtitle {font-size:20px;}
 	#result .form .input {padding:0 20px;}
 	#otziv .form .input {padding:0 20px;}
-	.mobile {margin-top:-30px;}
+	/*.mobile {margin-top:-30px;}*/
 	#program .formTitle {font-size:24px;}
 	#program .advert {font-size:16px;margin-top:20px;}
 	#program form .input {padding: 0px 10px;}
@@ -686,6 +689,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	#otziv .form {background:none;}
 	#contact .form .input {padding:0 20px;}
 	.map {margin: 0 auto;margin-top:20px;}
+	/*
 	.workstation {
 		visibility: hidden;
 		display:none;
@@ -707,7 +711,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	   	height:100%;
 	   	
    	}
-  
+  */
    	.carousel-control {position:fixed;}
 	
 	.navbar .container .navbar-header .navbar-brand {padding-left: 20px;}
@@ -750,7 +754,7 @@ and (orientation : landscape) {
 	#intro form .subtitle {font-size:20px;}
 	#result .form .input {padding:0 20px;}
 	#otziv .form .input {padding:0 20px;}
-	.mobile {margin-top:-30px;}
+	/*.mobile {margin-top:-30px;}*/
 	#program .formTitle {font-size:24px;}
 	#program .advert {font-size:16px;margin-top:20px;}
 	#program form .input {padding: 0px 10px;}
@@ -780,6 +784,7 @@ and (orientation : landscape) {
 	#otziv .form {background:none;}
 	#contact .form .input {padding:0 20px;}
 	.map {margin: 0 auto;margin-top:20px;}
+	/*
 	.workstation {
 		visibility: hidden;
 		display:none;
@@ -801,7 +806,7 @@ and (orientation : landscape) {
 	   	height:100%;
 	   	
    	}
-  
+  */
    	.carousel-control {position:fixed;}
   
 	.navbar .container .navbar-header .navbar-brand {padding-left: 20px;}
@@ -834,7 +839,8 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */
+and (-webkit-min-device-pixel-ratio: 2) {
+	 /* 
 	.workstation {
 		visibility: hidden;
 		display:none;
@@ -856,6 +862,7 @@ and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */
 	   	height:100%;
 	   	
    	}
+   	*/
 }
 /* ipad retina portrait */
 @media only screen 
@@ -880,6 +887,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 	#otziv .col-md-6 {
 		width:47%;
 	}
+	/*
 	.mobile {
 		visibility: hidden;
 		display:none;
@@ -898,7 +906,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 	   	top:-155px;;
 	   	left:0;
    	}
-
+*/
 }
 /* ipad 2 portrait */
 @media only screen 
@@ -915,7 +923,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	#intro form .subtitle {font-size:20px;}
 	#result .form .input {padding:0 20px;}
 	#otziv .form .input {padding:0 20px;}
-	.mobile {margin-top:-30px;}
+	/*.mobile {margin-top:-30px;}*/
 	#program .formTitle {font-size:24px;}
 	#program .advert {font-size:16px;margin-top:20px;}
 	#program form .input {padding: 0px 10px;}
@@ -945,6 +953,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	#otziv .form {background:none;}
 	#contact .form .input {padding:0 20px;}
 	.map {margin: 0 auto;margin-top:20px;}
+	/*
 	.workstation {
 		visibility: hidden;
 		display:none;
@@ -966,7 +975,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	   	height:100%;
 	   	
    	}
-  
+     */
    	.carousel-control {position:fixed;}
 	.navbar {
 		border-bottom: 1px solid rgba(255,255,255,.3);	
@@ -1086,7 +1095,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 @media only screen 
     and (max-width : 420px) { 
-		.workstation {
+	/*    
+	.workstation {
 		visibility: hidden;
 		display:none;
 	}
@@ -1108,6 +1118,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	   	height:100%;
 	   	
    	}
-  
+  */
 }
 	
