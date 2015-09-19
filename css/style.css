@@ -1105,7 +1105,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		visibility: visible;
 		display:block;
 		position: absolute;
-		top: -30px;
+		top: -50px;
 		left:0;
 		width:100%;
 		height:auto;
