@@ -636,7 +636,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	section {min-height:632px;max-height:632px;}
 	#otziv .col-md-6 {width:47%!important;}
 	.box-wht {padding-bottom:10px;}
-
+	.map {margin-top:0px;}
 
 }
 @media(max-width:768px) {
