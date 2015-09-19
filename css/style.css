@@ -914,6 +914,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) 
 and (-webkit-min-device-pixel-ratio: 1) { 
+	
 	.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
@@ -1047,6 +1048,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		text-align: right;
 		font-size: 10px;
 		padding-top: 22px;
+		display:block;
 	}
 	.visited-btn{
 		background-image:url('../images/galka.png');
