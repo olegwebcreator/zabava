@@ -1104,8 +1104,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	.mobile {
 		visibility: visible;
 		display:block;
-		position: relative;
-		top:40px;
+		position: absolute;
+		top: 225px;
 		left:0;
 		width:100%;
 		height:auto;
@@ -1115,7 +1115,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
    	.mobile svg {
 	   	margin:0 auto;
 	   	padding:0;
-	   	width: 420px;
+	   	width: 100%;
 	   	height: auto;
 	   	
    	}
