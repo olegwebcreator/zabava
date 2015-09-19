@@ -1138,7 +1138,7 @@ and (orientation : portrait) {
 	.mobile {
 		visibility: visible;
 		display:block;
-		position: inherit;
+		position: relative;
 		top: 0px;
 		left:0;
 		width:100%;
