@@ -743,6 +743,15 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 		left: 10px;
 		top: 38px;
 	}
+	.nav > li a {
+	   top: 10px;
+	   left: -50px;
+   	}
+   	.nav > li a span {
+	   	position: relative;
+	   	left: 50px;
+	   	top: -10px;
+   	}
 }
 /* MEDIA QUERIES */
 
@@ -1187,6 +1196,7 @@ and (orientation : portrait) {
 	   	height:100%;
 	   	
    	}
+   	
 
 }	
 /*
