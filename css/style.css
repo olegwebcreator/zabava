@@ -719,7 +719,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	.navbar .navbar-footer {display:none;}
 	.navbar-toggle {
 	    padding: 4px 6px;
-		font-size: 50px;
+		font-size: 32px;
 		color: #FFC600;
 	}
 	.navbar .container .topline{
