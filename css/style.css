@@ -539,23 +539,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	right:5%;
 	padding-left: 2px;
 }
-/* Portrait */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-  section{display:none;}
-}
 
-/* Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: landscape) {
-  	section{display:none;}
-}
 @media(min-width:767px) {
 		.navbar .container .navbar-collapse {
 		margin-left:-60px;
@@ -1069,4 +1053,34 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		display: block;
 	}
 
+}
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (orientation: portrait) {
+	 body{background-color: #F00;}  
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px)  
+  and (orientation: landscape) {
+   body{background-color: #F00;}
+}
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (orientation: portrait) {
+  body{background-color: #F00;}
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px)  
+  and (orientation: landscape) {
+   body{background-color: #F00;}
 }
