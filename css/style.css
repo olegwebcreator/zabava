@@ -1065,6 +1065,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	}
 
 }
+
 /* Portrait */
 @media screen 
   and (device-width: 320px) 
@@ -1109,6 +1110,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   and (orientation: landscape) {
 
 }
+
 /* Portrait */
 @media screen 
   and (device-width: 360px) 
@@ -1153,6 +1155,41 @@ and (-webkit-min-device-pixel-ratio: 1) {
   and (orientation: landscape) {
 
 }
+/* IPHONE 4 */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) { 
+	.workstation {
+		visibility: hidden;
+		display:none;
+	}
+	.mobile {
+		visibility: visible;
+		display:block;
+		
+		position: absolute;
+		top: 250px;
+		left:0;
+		width:100%;
+		height:auto;
+		padding:0px;	
+		//margin-top:-200px;	
+   	
+   	}
+   	.form-wrapper {
+		margin-top:140px;
+   	}
+   	.mobile svg {
+	   	margin:0 auto;
+	   	padding:0;
+	   	width: 100%;
+	   	height: auto;
+	   	
+   	}
+
+}	
+/*
 @media only screen 
     and (max-width : 420px) { 
 	    //svg {background: url(https://img-fotki.yandex.ru/get/5807/5091629.a3/0_86371_b2660de0_orig) no-repeat center center;}
@@ -1184,37 +1221,4 @@ and (-webkit-min-device-pixel-ratio: 1) {
    	}
   
 }
-/* IPHONE 4 */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) 
-and (orientation : portrait) { 
-	.workstation {
-		visibility: hidden;
-		display:none;
-	}
-	.mobile {
-		visibility: visible;
-		display:block;
-		
-		position: absolute;
-		top: 250px;
-		left:0;
-		width:100%;
-		height:auto;
-		padding:0px;	
-		//margin-top:-200px;	
-   	
-   	}
-   	.form-wrapper {
-		margin-top:-60px;
-   	}
-   	.mobile svg {
-	   	margin:0 auto;
-	   	padding:0;
-	   	width: 100%;
-	   	height: auto;
-	   	
-   	}
-
-}	
+*/
