@@ -1095,6 +1095,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 @media only screen 
     and (max-width : 420px) { 
+	    svg {background: url(https://img-fotki.yandex.ru/get/5807/5091629.a3/0_86371_b2660de0_orig)
+                no-repeat center center;}
 	/*    
 	.workstation {
 		visibility: hidden;
