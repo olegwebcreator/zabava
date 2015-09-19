@@ -987,7 +987,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	    transition: background .5s ease-in-out,padding .5s ease-in-out;
 	    height:93px;
 	}
-	.navbar .container {padding:0;max-width: 1000px;height:93px;border:1px solid #000;}
+	.navbar .container {padding:0;max-width: 1000px;height:93px;}
 	.navbar .container .navbar-header .navbar-brand{padding:0;margin-left:0px;}
 	.navbar .container .navbar-header .navbar-brand{width:80%;}
 	.navbar .container .navbar-collapse {}
