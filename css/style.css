@@ -17,7 +17,7 @@ body {
     background-color:#372202;
     
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h1, h3, h4, h5, h6 {
     margin: 0px;
     text-transform: uppercase;
     font-family: 'Pragmatica', arial;
@@ -220,7 +220,7 @@ footer {
 
 section {max-width:1000px;margin:0 auto;text-align:center;}
 section .heading {padding-top:120px;}
-section .heading h2 {
+section .heading h1 {
 	font-size: 30px;
 	color: #FFC600;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
@@ -494,7 +494,7 @@ ul.list-style li {text-align:left;font-size:16px;}
 	padding: 0 90px;
 }
 
-#contact h2 {
+#contact h1 {
 	color: #FFC600;
 	font-size: 28px;
 	font-weight:normal;
@@ -599,7 +599,8 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 
 }
 @media(min-width:992px) {
-	.slide0 .fill {background-image:url('../images/girl.png');}
+	
+.slide0 .fill {background-image:url('../images/girl.png');}
 .slide1 .fill {background-image:url('../images/hohlomabg.png');}
 .slide2 .fill {background-image:url('../images/hohlomabg.png');}
 .slide3 .fill {background-image:url('../images/girl2.png');}
@@ -653,7 +654,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 		.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
-	section .heading h2 {font-size:22px;}
+	section .heading h1 {font-size:22px;}
 	section .heading h4 {font-size:18px;}
 	#intro form .title {font-size:15px;}
 	#intro form .subtitle {font-size:20px;}
@@ -669,11 +670,11 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	.slide3 .fill {background-image:none;}
 	.slide4 .fill {background-image:none;}
 	.slide5 .fill {background-image:none;}
-	section .heading h2 {font-size:30px;}
+	section .heading h1 {font-size:30px;}
 	section .heading h4 {font-size:22px;}
 	
 	#intro form .input {padding: 0 20px;}
-	#component .heading h2 {
+	#component .heading h1 {
 	
 		margin-bottom: 30px;
 		
@@ -748,7 +749,7 @@ and (orientation : landscape) {
 	.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
-	section .heading h2 {font-size:22px;}
+	section .heading h1 {font-size:22px;}
 	section .heading h4 {font-size:18px;}
 	#intro form .title {font-size:15px;}
 	#intro form .subtitle {font-size:20px;}
@@ -764,11 +765,11 @@ and (orientation : landscape) {
 	.slide3 .fill {background-image:none;}
 	.slide4 .fill {background-image:none;}
 	.slide5 .fill {background-image:none;}
-	section .heading h2 {font-size:30px;}
+	section .heading h1 {font-size:30px;}
 	section .heading h4 {font-size:22px;}
 	
 	#intro form .input {padding: 0 20px;}
-	#component .heading h2 {
+	#component .heading h1 {
 	
 		margin-bottom: 30px;
 		
@@ -918,7 +919,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
-	section .heading h2 {font-size:22px;}
+	section .heading h1 {font-size:22px;}
 	section .heading h4 {font-size:18px;}
 	#intro form .title {font-size:15px;}
 	#intro form .subtitle {font-size:20px;}
@@ -934,11 +935,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	.slide3 .fill {background-image:none;}
 	.slide4 .fill {background-image:none;}
 	.slide5 .fill {background-image:none;}
-	section .heading h2 {font-size:30px;}
+	section .heading h1 {font-size:30px;}
 	section .heading h4 {font-size:22px;}
 	
 	#intro form .input {padding: 0 20px;}
-	#component .heading h2 {
+	#component .heading h1 {
 	
 		margin-bottom: 30px;
 		
@@ -1178,7 +1179,7 @@ and (orientation : portrait) {
 	   	margin:0 auto;
 	   	padding:0;
 	   	width:100%;
-	   	//height:100%;
+	   	height:100%;
 	   	
    	}
 
