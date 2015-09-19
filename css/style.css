@@ -539,10 +539,22 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	right:5%;
 	padding-left: 2px;
 }
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-	body {background:#F00;}
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+  section{display:none;}
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+  	section{display:none;}
 }
 @media(min-width:767px) {
 		.navbar .container .navbar-collapse {
