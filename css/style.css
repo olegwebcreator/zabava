@@ -539,6 +539,11 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	right:5%;
 	padding-left: 2px;
 }
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	body {background:#F00;}
+}
 @media(min-width:767px) {
 		.navbar .container .navbar-collapse {
 		margin-left:-60px;
