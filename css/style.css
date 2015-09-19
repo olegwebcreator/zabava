@@ -596,7 +596,13 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 
 }
 @media(min-width:992px) {
-		.navbar .container .navbar-header .navbar-brand {width:100%;}
+	.slide0 .fill {background-image:url('../images/girl.png');}
+.slide1 .fill {background-image:url('../images/hohlomabg.png');}
+.slide2 .fill {background-image:url('../images/hohlomabg.png');}
+.slide3 .fill {background-image:url('../images/girl2.png');}
+.slide4 .fill {background-image:url('../images/otzivi.png');}
+.slide5 .fill {background-image:url('../images/girl3.png');}
+	.navbar .container .navbar-header .navbar-brand {width:100%;}
 	.navbar .container .navbar-collapse {margin-left:0px;}
 	.navbar-nav > li {font-size: 14px;padding: 10px;}
 	.navbar .navbar-footer {font-size:12px;}
