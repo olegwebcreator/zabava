@@ -1091,12 +1091,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
   and (device-width: 360px) 
   and (device-height: 640px)  
   and (orientation: landscape) {
-   body{background-color: #F00;}
+   //body{background-color: #F00;}
 }
 @media only screen 
     and (max-width : 420px) { 
-	    svg {background: url(https://img-fotki.yandex.ru/get/5807/5091629.a3/0_86371_b2660de0_orig)
-                no-repeat center center;}
+	    svg {background: url(https://img-fotki.yandex.ru/get/5807/5091629.a3/0_86371_b2660de0_orig) no-repeat center center;}
 	   
 	.workstation {
 		visibility: hidden;
@@ -1108,15 +1107,15 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		position: relative;
 		top:40px;
 		left:0;
-		width:415px;
-		height:270px;
+		width:100%;
+		height:100%;
 		padding:0px;		
    	}
    	
    	.mobile svg {
 	   	margin:0 auto;
 	   	padding:0;
-	   	width:400px;
+	   	width:100%;
 	   	height:100%;
 	   	
    	}
