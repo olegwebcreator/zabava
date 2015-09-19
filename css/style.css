@@ -201,6 +201,11 @@ footer {
 	min-height:100%;
 	background-color: rgba(243, 233, 210, 0.8)!important;
 }
+.nav > li > a {padding:0;color:#331f06;font-weight: normal;padding-top: 20px;margin-top: -20px;}
+.navbar-custom .nav li.active a, .navbar-custom .nav li:hover a,.navbar-custom .nav li:link {
+	background:none;
+	border:none;
+}
 /* END NAV */
 /* ################################################# */
 /* Content */
@@ -651,7 +656,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 
 }
 @media(max-width:768px) {
-		.container {max-width:100%;}
+	.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
 	section .heading h1 {font-size:22px;}

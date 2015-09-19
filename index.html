@@ -21,7 +21,7 @@
 	    <link href="css/style.css" rel="stylesheet">
 		<link href="color/default.css" rel="stylesheet">
 		<script type="text/javascript" src="//cdn.callbackhunter.com/cbh.js?hunter_code=900ac22b675fa43c79ffec3a25a8b2ce" charset="UTF-8"></script>
-		
+
 	</head>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 		<!-- Preloader -->
@@ -54,7 +54,7 @@
 						        	<div class='inside-btn'></div>
 						        	
 						        </div>
-						        <span>Главная</span>
+						        <a href="#intro"><span>Главная</span></a>
 						  
 						</li>
 						 
@@ -63,7 +63,7 @@
 						        	<div class='sprite visited-btn'></div>
 						        	<div class='inside-btn'></div>
 						        </div>
-						        <span>Результат</span>
+						        <a href="#result"><span>Результат</span></a>
 						</li>
 						
 						<li data-target="#myCarousel" data-slide-to="2">
@@ -71,7 +71,7 @@
 									<div class='sprite visited-btn'></div>
 						        	<div class='inside-btn'></div>
 								</div>
-								<span>Компоненты</span>
+								<a href="#component"><span>Компоненты</span></a>
 						</li>
 						
 						<li data-target="#myCarousel" data-slide-to="3">
@@ -79,7 +79,7 @@
 									<div class='sprite visited-btn'></div>
 						        	<div class='inside-btn'></div>
 								</div>
-								<span>Программа</span>
+								<a href="#program"><span>Программа</span></a>
 						</li>
 						
 						<li data-target="#myCarousel" data-slide-to="4">
@@ -87,7 +87,7 @@
 									<div class='sprite visited-btn'></div>
 						        	<div class='inside-btn'></div>
 								</div>
-								<span>Отзывы</span>
+								<a href="#otziv"><span>Отзывы</span></a>
 						</li>
 						
 						<li data-target="#myCarousel" data-slide-to="5">
@@ -95,7 +95,7 @@
 									<div class='sprite visited-btn'></div>
 						        	<div class='inside-btn'></div>
 								</div>
-								<span>Контакты</span>
+								<a href="#contact"><span>Контакты</span></a>
 						</li>
 						
 					</ul>
@@ -748,10 +748,30 @@
 				});
 				
 		</script>
-		<script>
-			/*
-				
-				*/
+				<script type="text/javascript">
+					var isMobile = {
+					    Android: function() {
+					        return navigator.userAgent.match(/Android/i);
+					    },
+					    BlackBerry: function() {
+					        return navigator.userAgent.match(/BlackBerry/i);
+					    },
+					    iOS: function() {
+					        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+					    },
+					    Opera: function() {
+					        return navigator.userAgent.match(/Opera Mini/i);
+					    },
+					    Windows: function() {
+					        return navigator.userAgent.match(/IEMobile/i);
+					    },
+					    any: function() {
+					        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+					    }
+					};
+					if(isMobile.any()){
+						$('.item').addClass('active');
+					}
 		</script>
 
 	</body>
