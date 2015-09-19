@@ -1138,16 +1138,21 @@ and (orientation : portrait) {
 	.mobile {
 		visibility: visible;
 		display:block;
+		/*
 		position: absolute;
 		top: 250px;
 		left:0;
 		width:100%;
 		height:auto;
-		padding:0px;		
+		padding:0px;	
+		margin-top:-200px;	
+   	*/
    	}
    	.form-wrapper {
+	 /*
 	   	position: relative;
 	   	top: 150px;
+   	*/
    	}
    	.mobile svg {
 	   	margin:0 auto;
