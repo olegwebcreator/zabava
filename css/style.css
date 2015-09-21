@@ -659,6 +659,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
+	section .heading {padding-top:100px;}
 	section .heading h1 {font-size:22px;}
 	section .heading h4 {font-size:18px;}
 	#intro form .title {font-size:15px;}
@@ -763,6 +764,7 @@ and (orientation : landscape) {
 	.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
+	section .heading {padding-top:100px;}
 	section .heading h1 {font-size:22px;}
 	section .heading h4 {font-size:18px;}
 	#intro form .title {font-size:15px;}
@@ -933,6 +935,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
+	section .heading {padding-top:100px;}
 	section .heading h1 {font-size:22px;}
 	section .heading h4 {font-size:18px;}
 	#intro form .title {font-size:15px;}
