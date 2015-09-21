@@ -379,7 +379,7 @@ section .heading h4 {
 	padding-top:20px;
 	max-width: 590px;
 	min-height: 250px;
-	margin:0 auto;
+	margin:-20px auto;
 }
 #result ul {
     list-style-image: url('../images/symbol.png'); /* Путь к изображению маркера */
@@ -399,6 +399,9 @@ section .heading h4 {
 #result form .input {
 	padding: 0 135px;
 	margin-top: -15px;
+}
+#result .heading h1 {
+	margin-top:20px;
 }
 #block1,#block2,#block3,#block4,#block5,#block6{
 	opacity:0;
