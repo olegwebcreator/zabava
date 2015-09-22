@@ -199,7 +199,8 @@ a:hover, a:focus, a:link {
 }
 footer {
 	min-height:100%;
-	background-color: rgba(243, 233, 210, 0.8)!important;
+	background-color: rgba(243, 233, 210, 0.5)!important;
+	
 }
 .nav > li > a {padding:0;color:#331f06;font-weight: normal;padding-top: 20px;margin-top: -20px;}
 .navbar-custom .nav li.active a, .navbar-custom .nav li:hover a,.navbar-custom .nav li:link {
@@ -403,6 +404,8 @@ section .heading h4 {
 #result .heading h1 {
 	margin-top:20px;
 }
+#result .container, #program .container, #otziv .container {margin-top:-60px;}
+body {overflow:hidden;}
 #block1,#block2,#block3,#block4,#block5,#block6{
 	opacity:0;
 }
@@ -681,7 +684,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	.slide5 .fill {background-image:none;}
 	section .heading h1 {font-size:30px;}
 	section .heading h4 {font-size:22px;}
-	
+	body {overflow:visible;}
 	#intro form .input {padding: 0 20px;}
 	#component .heading h1 {
 	
@@ -891,6 +894,7 @@ and (max-device-width : 1024px)
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
 	 .navbar .container .navbar-nav {margin-left:40px;;}
+	 body {overflow:visible;}
 }
 @media only screen 
 and (min-device-width : 768px) 
@@ -934,7 +938,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) 
 and (-webkit-min-device-pixel-ratio: 1) { 
-	
+	body {overflow:visible;}
 	.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
@@ -1092,6 +1096,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   and (device-width: 320px) 
   and (device-height: 640px) 
   and (orientation: portrait) {
+	  body {overflow:visible;}
   .workstation {
 		visibility: hidden;
 		display:none;
@@ -1137,6 +1142,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (orientation: portrait) {
+	  body {overflow:visible;}
 .workstation {
 		visibility: hidden;
 		display:none;
@@ -1203,7 +1209,7 @@ and (orientation : portrait) {
 	   	
    	}
    	
-
+body {overflow:visible;}
 }	
 /*
 @media only screen 
