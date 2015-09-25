@@ -396,7 +396,10 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	}
 	.line {width:50%;height:2px; background: #ffc600;}
 	.map {margin:0 auto;}
-
+.nav > li > a:hover, .nav > li > a:focus {
+    	text-decoration: none;
+		background-color: none;
+    }
 @media(min-width:992px) {
 	.navbar {
 	    height:93px;
@@ -416,6 +419,10 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 		margin-top:30px;
 	}
 	.nav > li > a {padding:10px 8px;}
+	.nav > li > a:hover, .nav > li > a:focus {
+    	text-decoration: none;
+		background-color: none;
+    }
 	.heading {
  	   padding-top: 110px;
 	}
