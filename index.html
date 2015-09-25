@@ -768,7 +768,7 @@
 				            $('.heading').css('padding-top',pH);
 				}
 				$( document ).ready(function() {
-				    myFunction();     
+				      
 					$("a.fancyimage").fancybox(); 
 					$('#myCarousel').carousel({ interval: false });
 					$("#s1").click(function(){
@@ -792,6 +792,33 @@
 			      		
 					});
 				});
+				var isMobile = {
+						Android: function() {
+							return navigator.userAgent.match(/Android/i);
+						},
+						BlackBerry: function() {
+							return navigator.userAgent.match(/BlackBerry/i);
+						},
+						iOS: function() {
+							return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+						},
+						Opera: function() {
+							return navigator.userAgent.match(/Opera Mini/i);
+						},
+						Windows: function() {
+							return navigator.userAgent.match(/IEMobile/i);
+						},
+						any: function() {
+							return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+						}
+					};
+					if(isMobile.any()){
+						$('.item').addClass('active');
+						$('.carousel-control').hide();
+					} else {
+						myFunction();   
+					}	
+					
 				$( document ).on( 'click', '.carousel-control', function () {
 					if ($(this).data('slide')=='next') {
 						if ($('.navbar-nav li.active').data('slideTo')==1) {
@@ -848,32 +875,7 @@
 				});
 				
 		</script>
-		<script type="text/javascript">
-			var isMobile = {
-				Android: function() {
-					return navigator.userAgent.match(/Android/i);
-				},
-				BlackBerry: function() {
-					return navigator.userAgent.match(/BlackBerry/i);
-				},
-				iOS: function() {
-					return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-				},
-				Opera: function() {
-					return navigator.userAgent.match(/Opera Mini/i);
-				},
-				Windows: function() {
-					return navigator.userAgent.match(/IEMobile/i);
-				},
-				any: function() {
-					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-				}
-			};
-			if(isMobile.any()){
-				$('.item').addClass('active');
-				$('.carousel-control').hide();
-			}
-		</script>
+		
 
 	</body>
 </html>
