@@ -346,35 +346,36 @@
 	            	<div class="fill">
 		            	
 						<section id="otziv" class="home-section">
+							
 							<div class="heading">
 								<div class="container">
 									<div class="row">
 										<div class="col-md-12 cols-sm-12 col-lg12">
-											<h1 style="margin-bottom:-10px;">Отзывы клиентов салона</h1>
+											<h1>Отзывы клиентов салона</h1>
 										</div>
 									</div>
 									
 									<div class="row o-wrap">
-										<div class='col-md-6 cols-sm-12 box-wht'>
+										<div class='col-md-6 cols-sm-12 box-wht leftBlock1'>
 											<div class='title'>Ольга, 20 лет</div>
 											<img src='images/photo/client.png' class='img-circle pull-left'>
 											<p class='text-left'>Спасибо мастеру Анечке за мега профессиональный подход и терпеливую консультацию на протяжении всей процедуры ламинирования волос! все-таки очень много зависит от человека, который делает процедуру и мне повезло, что я попала именно ...</p>
 										</div>	
 										
-										<div class='col-md-6 cols-sm-12 box-wht'>
+										<div class='col-md-6 cols-sm-12 box-wht rightBlock1'>
 											<div class='title'>Ольга, 20 лет</div>
 											<img src='images/photo/client.png' class='img-circle pull-left'>
 											<p class='text-left'>Спасибо мастеру Анечке за мега профессиональный подход и терпеливую консультацию на протяжении всей процедуры ламинирования волос! все-таки очень много зависит от человека, который делает процедуру и мне повезло, что я попала именно ...</p>
 										</div>	
 									</div>
 									
-									<div class="row o-wrap" style="margin-top:-10px;">
-										<div class='col-md-6 cols-sm-12 box-wht'>
+									<div class="row o-wrap">
+										<div class='col-md-6 cols-sm-12 box-wht leftBlock2'>
 											<div class='title'>Ольга, 20 лет</div>
 											<img src='images/photo/client.png' class='img-circle pull-left'>
 											<p class='text-left'>Спасибо мастеру Анечке за мега профессиональный подход и терпеливую консультацию на протяжении всей процедуры ламинирования волос! все-таки очень много зависит от человека, который делает процедуру и мне повезло, что я попала именно ...</p>
 										</div>	
-										<div class='col-md-6 cols-sm-12 box-wht'>
+										<div class='col-md-6 cols-sm-12 box-wht rightBlock2'>
 											<div class='title'>Ольга, 20 лет</div>
 											<img src='images/photo/client.png' class='img-circle pull-left'>
 											<p class='text-left'>Спасибо мастеру Анечке за мега профессиональный подход и терпеливую консультацию на протяжении всей процедуры ламинирования волос! все-таки очень много зависит от человека, который делает процедуру и мне повезло, что я попала именно ...</p>
@@ -394,6 +395,7 @@
 									
 								</div>
 							</div>
+							
 						</section>
 						
 	            	</div>
@@ -808,27 +810,17 @@
 				    });
 				    
 				}
-				function myFunction()
-				         {
-				             if(window.innerWidth !== undefined && window.innerHeight !== undefined) {
+				
+				$( document ).ready(function() {
+				      if(window.innerWidth !== undefined && window.innerHeight !== undefined) {
 				                 var w = window.innerWidth;
 				                 var h = window.innerHeight;
-				             } else {
+				        } else {
 				                 var w = document.documentElement.clientWidth;
 				                 var h = document.documentElement.clientHeight;
-				            }
+				        }
 				            var txt = "Page size: width=" + w + ", height=" + h;
-				            var navbarHeight = $('.navbar').innerHeight();
-				            var headerHeight = $('header').innerHeight();
-				            var cHeight = $('header .container').innerHeight();
-				            var vbHeight = headerHeight - navbarHeight;
-				            var pH= (vbHeight-cHeight)/2 + navbarHeight;
-				            var footerHeight = h - headerHeight;
-				            $('footer').css('height',footerHeight);
-				            $('.heading').css('padding-top',pH);
-				}
-				$( document ).ready(function() {
-				      
+				            alert(txt);
 					$("a.fancyimage").fancybox(); 
 					$('#myCarousel').carousel({ interval: false });
 					$("#s1").click(function(){
@@ -852,37 +844,7 @@
 			      		
 					});
 				});
-				var isMobile = {
-						Android: function() {
-							return navigator.userAgent.match(/Android/i);
-						},
-						BlackBerry: function() {
-							return navigator.userAgent.match(/BlackBerry/i);
-						},
-						iOS: function() {
-							return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-						},
-						Opera: function() {
-							return navigator.userAgent.match(/Opera Mini/i);
-						},
-						Windows: function() {
-							return navigator.userAgent.match(/IEMobile/i);
-						},
-						any: function() {
-							return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-						}
-					};
-					if(isMobile.any()){
-						$('.item').addClass('active');
-						$('.carousel-control').hide();
-						$('.heading').css('padding-top',100);
-						$('#result .heading').css('padding-top',160);
-						$('#program h1').css('margin-top',50);
-						$('#otziv .heading h1').css('margin-top',50);
-					} else {
-						myFunction();   
-					}	
-					
+				
 				$( document ).on( 'click', '.carousel-control', function () {
 					if ($(this).data('slide')=='next') {
 						if ($('.navbar-nav li.active').data('slideTo')==1) {
@@ -940,7 +902,57 @@
 				    }
 				});
 				
-				
+				var isMobile = {
+						Android: function() {
+							return navigator.userAgent.match(/Android/i);
+						},
+						BlackBerry: function() {
+							return navigator.userAgent.match(/BlackBerry/i);
+						},
+						iOS: function() {
+							return navigator.userAgent.match(/iPhone|iPod/i);
+						},
+						Opera: function() {
+							return navigator.userAgent.match(/Opera Mini/i);
+						},
+						Windows: function() {
+							return navigator.userAgent.match(/IEMobile/i);
+						},
+						any: function() {
+							return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+						}
+					};
+					if(isMobile.any()){
+						$('.item').addClass('active');
+						$('.carousel-control').hide();
+						/*
+						$('.heading').css('padding-top',100);
+						$('#result .heading').css('padding-top',160);
+						$('#program h1').css('margin-top',50);
+						$('#otziv .heading h1').css('margin-top',50);
+						*/
+						
+					} else {
+						
+						if(window.innerWidth !== undefined && window.innerHeight !== undefined) {
+				                 var w = window.innerWidth;
+				                 var h = window.innerHeight;
+				        } else {
+				                 var w = document.documentElement.clientWidth;
+				                 var h = document.documentElement.clientHeight;
+				        }
+				            var txt = "Page size: width=" + w + ", height=" + h;
+				            var navbarHeight = $('.navbar').innerHeight();
+				            var headerHeight = $('header').innerHeight();
+				            var cHeight = $('header .container').innerHeight();
+				            var vbHeight = headerHeight - navbarHeight;
+				            var pH= (vbHeight-cHeight)/2 + navbarHeight/2;
+				            var footerHeight = h - headerHeight;
+				            $('footer').css('height',footerHeight);
+				            $('.heading').css('padding-top',pH);   
+							
+					}	
+					
 		</script>
 		
 
