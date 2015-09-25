@@ -225,7 +225,7 @@ footer {
 .slide5 .fill {background-image:url('../images/girl3.png');}
 
 section {max-width:1000px;margin:0 auto;text-align:center;}
-section .heading {padding-top:120px;}
+//section .heading {padding-top:120px;}
 section .heading h1 {
 	font-size: 30px;
 	color: #FFC600;
@@ -407,13 +407,13 @@ section .heading h4 {
 #result .container, #program .container, #otziv .container {margin-top:-60px;}
 body {overflow:hidden;}
 #block1,#block2,#block3,#block4,#block5,#block6{
-	opacity:0;
+	opacity:1;
 }
 #b1ttl,#b2ttl,#b3ttl,#b4ttl,#b5ttl,#b6ttl {
-	opacity:0;
+	opacity:1;
 }
 #b1txt,#b2txt,#b3txt,#b4txt,#b5txt,#b6txt {
-	opacity:0;
+	opacity:1;
 }
 #sur1,#sur2,#sur3,#sur4,#sur5,#sur6 {opacity:0}
 #ll1,#ll2,#ll3,#ll4,#ll5,#ll6 {opacity:0;}
@@ -529,7 +529,7 @@ a.carousel-control {color:#FFC600;}
 a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {color:#FFC600;}
 .carousel-control {
 	position: fixed;
-    top: 50%;
+    top: 35%;
     width: 40px;
     height: 40px;
     font-size: 40px;
@@ -607,7 +607,8 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	   	padding: 10px 9px;
    	}
    	#program .form {background:none;}
-
+   	h1.ttl-top {margin-top:-50px;}
+   	//#intro .heading h1 {margin-top:-50px;}
 }
 @media(min-width:992px) {
 	
@@ -666,8 +667,6 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
 	section .heading {padding-top:100px;}
-	section .heading h1 {font-size:22px;}
-	section .heading h4 {font-size:18px;}
 	#intro form .title {font-size:15px;}
 	#intro form .subtitle {font-size:20px;}
 	#result .form .input {padding:0 20px;}
@@ -770,9 +769,8 @@ and (orientation : landscape) {
 	.container {max-width:100%;}
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
-	section .heading {padding-top:100px;}
-	section .heading h1 {font-size:22px;}
-	section .heading h4 {font-size:18px;}
+	//section .heading {padding-top:100px;}
+	
 	#intro form .title {font-size:15px;}
 	#intro form .subtitle {font-size:20px;}
 	#result .form .input {padding:0 20px;}
@@ -943,8 +941,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	.navbar-toggle{font-size:40px;}
 	.navbar.topline {display:none;}
 	section .heading {padding-top:100px;}
-	section .heading h1 {font-size:22px;}
-	section .heading h4 {font-size:18px;}
 	#intro form .title {font-size:15px;}
 	#intro form .subtitle {font-size:20px;}
 	#result .form .input {padding:0 20px;}
