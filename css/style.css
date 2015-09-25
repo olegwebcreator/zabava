@@ -415,8 +415,8 @@ body {overflow:hidden;}
 #b1txt,#b2txt,#b3txt,#b4txt,#b5txt,#b6txt {
 	opacity:1;
 }
-#sur1,#sur2,#sur3,#sur4,#sur5,#sur6 {opacity:0}
-#ll1,#ll2,#ll3,#ll4,#ll5,#ll6 {opacity:0;}
+#sur1,#sur2,#sur3,#sur4,#sur5,#sur6 {opacity:1}
+#ll1,#ll2,#ll3,#ll4,#ll5,#ll6 {opacity:1;}
 #ttt1,#ttt2,#ttt3,#ttt4,#ttt5,#ttt6 {opacity:0;}
 #txtt1,#txtt2,#txtt3,#txtt4,#txtt5,#txtt6 {opacity:0;}
 /* ===========================
