@@ -372,19 +372,17 @@
 									<div class="row">
 										<div class="col-md-12 cols-sm-12 col-lg12 workstation">
 <svg version="1.1" id="svg-main" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 632" enable-background="new 0 0 1000 632" xml:space="preserve"> 
-<defs>
-  <style type="text/css">
-   <![CDATA[
-    @font-face {
-        font-family: Pragmatica;
-        src: url('fonts/pragmatica/Pragmatica_MediumC_Reg.otf');
-    }
-   ]]>
- </style>
-</defs>		
-				
+	<defs>
+	  <style type="text/css">
+	   <![CDATA[
+	    @font-face {
+	        font-family: Pragmatica;
+	        src: url('fonts/pragmatica/Pragmatica_MediumC_Reg.otf');
+	    }
+	   ]]>
+	 </style>
+	</defs>						
 </svg>
-
 										</div>	
 									</div>
 									<div class="row">
@@ -428,7 +426,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-md-12 cols-sm-12 col-lg12">
-											<div class='formTitle'><span>7 шагов к совершенству волос</span></div>
+											<h1><span>7 шагов к совершенству волос</span></h1>
 											<form role="form" class="form" id="contact-form">
 												<div class="form-group">
 													<ol>
@@ -815,6 +813,10 @@
 					if(isMobile.any()){
 						$('.item').addClass('active');
 						$('.carousel-control').hide();
+						$('.heading').css('padding-top',100);
+						$('#result .heading').css('padding-top',160);
+						$('#program h1').css('margin-top',50);
+						$('#otziv .heading h1').css('margin-top',50);
 					} else {
 						myFunction();   
 					}	

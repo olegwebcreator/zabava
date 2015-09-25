@@ -226,7 +226,7 @@ footer {
 
 section {max-width:1000px;margin:0 auto;text-align:center;}
 //section .heading {padding-top:120px;}
-section .heading h1 {
+h1 {
 	font-size: 30px;
 	color: #FFC600;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
@@ -437,7 +437,7 @@ body {overflow:hidden;}
 --- Program
 ============================ */
 #program {margin:0 auto;}
-#program .formTitle {font-size:30px;width:100%;margin:0 auto;position:relative;top:22px;color:#ffc600;margin-top: -22px;}
+#program h1 {width:100%;margin:0 auto;position:relative;top:22px;color:#ffc600;margin-top: -22px;}
 #program .form {background:url('../images/border_long.png'); background-repeat:no-repeat; box-shadow: none;border:none;max-width:865px;margin:0 auto;}
 #program form .form-group {}
 #program form .form-group ol {list-style: none;counter-reset: point;padding-top:35px;}
@@ -507,7 +507,6 @@ ul.list-style li {text-align:left;font-size:16px;}
 
 #contact h1 {
 	color: #FFC600;
-	font-size: 28px;
 	font-weight:normal;
 	text-transform: none;
 	margin:0;
@@ -672,7 +671,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	#result .form .input {padding:0 20px;}
 	#otziv .form .input {padding:0 20px;}
 	.mobile {margin-top:-30px;}
-	#program .formTitle {font-size:24px;}
+    h1 {font-size:24px;}
 	#program .advert {font-size:16px;margin-top:20px;}
 	#program form .input {padding: 0px 10px;}
 	.slide0 .fill {background-image:none;}
@@ -681,7 +680,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	.slide3 .fill {background-image:none;}
 	.slide4 .fill {background-image:none;}
 	.slide5 .fill {background-image:none;}
-	section .heading h1 {font-size:30px;}
+	
 	section .heading h4 {font-size:22px;}
 	body {overflow:visible;}
 	#intro form .input {padding: 0 20px;}
@@ -776,7 +775,7 @@ and (orientation : landscape) {
 	#result .form .input {padding:0 20px;}
 	#otziv .form .input {padding:0 20px;}
 	.mobile {margin-top:-30px;}
-	#program .formTitle {font-size:24px;}
+	h1 {font-size:24px;}
 	#program .advert {font-size:16px;margin-top:20px;}
 	#program form .input {padding: 0px 10px;}
 	.slide0 .fill {background-image:none;}
@@ -785,7 +784,7 @@ and (orientation : landscape) {
 	.slide3 .fill {background-image:none;}
 	.slide4 .fill {background-image:none;}
 	.slide5 .fill {background-image:none;}
-	section .heading h1 {font-size:30px;}
+	
 	section .heading h4 {font-size:22px;}
 	
 	#intro form .input {padding: 0 20px;}
@@ -946,7 +945,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	#result .form .input {padding:0 20px;}
 	#otziv .form .input {padding:0 20px;}
 	.mobile {margin-top:-30px;}
-	#program .formTitle {font-size:24px;}
+	h1 {font-size:24px;}
 	#program .advert {font-size:16px;margin-top:20px;}
 	#program form .input {padding: 0px 10px;}
 	.slide0 .fill {background-image:none;}
@@ -955,7 +954,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	.slide3 .fill {background-image:none;}
 	.slide4 .fill {background-image:none;}
 	.slide5 .fill {background-image:none;}
-	section .heading h1 {font-size:30px;}
 	section .heading h4 {font-size:22px;}
 	
 	#intro form .input {padding: 0 20px;}
