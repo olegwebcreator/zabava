@@ -744,6 +744,9 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 		margin:0 10%;
 	}
 	#program form {background:none;}
+	.navbar-nav > li {
+			border-bottom:1px solid #55432A;
+	}
 }	
 @media(min-width:480px) and (max-width:767px){
 	.navbar-brand {margin-top: -35px;}
