@@ -71,7 +71,7 @@
 									<div class='sprite visited-btn'></div>
 						        	<div class='inside-btn'></div>
 								</div>
-								<a id="anima" onClick="mainAnimation();" href="#component"><span>Компоненты</span></a>
+								<a id="anima" onClick="Animation();" href="#component"><span>Компоненты</span></a>
 						</li>
 						
 						<li data-target="#myCarousel" data-slide-to="3">
@@ -927,16 +927,20 @@
 				                 var w = document.documentElement.clientWidth;
 				                 var h = document.documentElement.clientHeight;
 				        }
+				        	
 				            var txt = "Page size: width=" + w + ", height=" + h;
 				            var navbarHeight = $('.navbar').innerHeight();
 				            var headerHeight = $('header').innerHeight();
-				            var cHeight = $('header .container').innerHeight();
-				            var vbHeight = headerHeight - navbarHeight;
-				            var pH= (vbHeight-cHeight)/2 + navbarHeight/2;
+				            
+				            var vbHeight = h;
+				            var pH= (vbHeight)/4 - navbarHeight;
 				            var footerHeight = h - headerHeight;
 				            $('footer').css('height',footerHeight);
 				            $('.heading').css('padding-top',pH);   
 							
 					}	
-
+					function Animation() {
+						secondAnimation();
+						mainAnimation();
+					}
 		</script>
