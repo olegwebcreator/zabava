@@ -669,6 +669,11 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 		float:right;
 		padding-top:20px;
 		text-align:right;
+		position: absolute;
+		right: 10px;
+		font-size: 12px;
+		top: 6px;
+		text-align: right;
 	}
 	.navbar-nav {
 		margin-top:50px;
@@ -758,15 +763,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 .navbar-custom .nav li.active {
 	font-weight:bold;
 }
-.navbar .navbar-footer {
-	float: right;
-	text-align: right;
-	font-size: 14px;
-	padding-top: 17px;
-	font-weight:normal;
-	width:20%;
-	padding-right:20px;
-}
+
 .visited-btn{
 	background-image:url('../images/galka.png');
 	width:26px;
