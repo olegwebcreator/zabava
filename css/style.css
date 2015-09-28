@@ -646,7 +646,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	#result form {
     	background: transparent url("../images/border.png") no-repeat !important; 
     }
-    .form-wrapper {margin-top:-590px;}
+    .form-wrapper {margin-top:-590px;position: relative;top: -40px;}
     #component form {
 	    max-width:350px;
 	    margin:0 auto;
