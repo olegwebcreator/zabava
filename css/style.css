@@ -230,9 +230,9 @@ form {text-align:center}
 a.carousel-control {color:#FFC600;}
 a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {color:#FFC600;}
 .carousel-control {
-	position: fixed;
-    top: 30%;
-    width: 40px;
+	position: absolute;
+	top: 50%;
+	width: 40px;
     height: 40px;
     font-size: 40px;
     font-weight: 100;
@@ -241,8 +241,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
     text-align: center;
     background: none;
     border: 3px solid  #FFC600;
-    border-radius: 50%;
-    
+    border-radius: 50%;    
 }	
 .carousel-control.left {
 	left:5%;
@@ -632,10 +631,8 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
     .workstation{
 	    visibility:visible;
 	    display:block;
-	    position: relative;
-	    top: -120px;
-	    left: 0;
 	}
+	#svg-main {margin-top:-39%;}
     .fill {height:632px;}
     .slide0 .fill {background-image:url('../images/girl.png')!important;}
 	.slide1 .fill {background-image:url('../images/hohlomabg.png')!important;}
@@ -646,7 +643,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	#result form {
     	background: transparent url("../images/border.png") no-repeat !important; 
     }
-    .form-wrapper {margin-top:-590px;position: relative;top: -40px;}
+    .form-wrapper {position:relative;z-index:1;}
     #component form {
 	    max-width:350px;
 	    margin:0 auto;
@@ -698,11 +695,11 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	#component form {max-width:60%!important;}
 	#component form .input {padding:0 40px;}
 	#component .form-wrapper {
- 	   margin-top: -60px!important;
+ 	   margin-top:-60px;
 	}
 	#program form {max-width:50%!important; margin:0 auto;}
 	#testimonial form {max-width:60%!important;}
-	#testimonial .box-wht {padding-bottom:40px!important;}
+	#testimonial .box-wht {padding-bottom:70px!important;}
 	#contact form {max-width:60%!important;}
 	#contact form .input {padding:0 40px;}
 	#contact .subtitle {font-size:22px;}
@@ -777,7 +774,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	visibility: visible;
 	display: block;
 }
-
+.carousel-control {position:fixed;}
 }	
 @media(min-width:560px) and 
 	(max-width:767px) {
@@ -806,6 +803,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	.navbar-nav > li {
 			border-bottom:1px solid #55432A;
 	}
+	.carousel-control {position:fixed;}
 }	
 @media(min-width:480px) and (max-width:767px){
 	.navbar-brand {margin-top: -35px;}
@@ -929,6 +927,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	}
 	.line {margin: 10px auto;}
 	.map {width:458px;height:408px;margin-top:20px;}
+	.carousel-control {position:fixed;top:30%;}
 }
 @media(max-width:479px) {
 	.navbar {
@@ -1068,4 +1067,5 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	}
 	.line {margin: 10px auto;}
 	.map {width:458px;height:408px;margin-top:20px;}
+	.carousel-control {position:fixed;top:30%;}
 }
