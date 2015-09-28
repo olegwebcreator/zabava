@@ -399,6 +399,7 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 		    background-color: rgba(255,255,255,0);
 		    border:none;
 		} 
+		
 @media(min-width:992px) {
 	.navbar {
 	    height:93px;
@@ -417,7 +418,13 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 	.navbar-nav {
 		margin-top:30px;
 	}
-	.nav > li > a {padding:10px 8px;}
+	.nav > li > a {padding:10px 0px;}
+	.navbar-nav > li > a {
+			min-width:95px;
+	}
+	.navbar-nav > li.animation-btn > a {
+			min-width:110px;
+	}
 	
 	/* NAV */
 .navbar .container {padding:0;max-width: 1000px;height:93px;}
@@ -471,10 +478,10 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 .navbar .navbar-footer {
 	float: right;
 	text-align: right;
-	font-size: 14px;
-	padding-top: 18px;
+	font-size: 13px;
+	padding-top: 20px;
 	font-weight:normal;
-	width:19%;
+	width:17%;
 
 }
 .visited-btn{
