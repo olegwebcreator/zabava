@@ -67,12 +67,12 @@
 						        <a data-toggle="collapse" data-target=".navbar-main-collapse" href="#result"><span>Результат</span></a>
 						</li>
 						
-						<li data-target="#myCarousel" data-slide-to="2">
+						<li data-target="#myCarousel" data-slide-to="2" id="anima" class='animation-btn'>
 								<div class='round-btn'>
 									<div class='sprite visited-btn'></div>
 						        	<div class='inside-btn'></div>
 								</div>
-								<a  data-toggle="collapse" data-target=".navbar-main-collapse" id="anima" onClick='Animation()' href="#component"><span>Компоненты</span></a>
+								<a  data-toggle="collapse" data-target=".navbar-main-collapse" href="#component"><span>Компоненты</span></a>
 						</li>
 						
 						<li data-target="#myCarousel" data-slide-to="3">
@@ -850,6 +850,10 @@
 				});
 
 				
+		});
+		$( document ).on( 'click', '.animation-btn', function () {
+			mainAnimation();
+			secondAnimation();
 		});
 		$( document ).on( 'click', '.carousel-control', function () {
 					if ($(this).data('slide')=='next') {
