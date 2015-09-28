@@ -399,7 +399,9 @@ a.carousel-control:hover,a.carousel-control:link,a.carousel-control:active {colo
 		    background-color: rgba(255,255,255,0);
 		    border:none;
 		} 
-		
+	.modal-body{text-align:center;}	
+	.modal-body h1 {color:#333;}
+	.modal.in .modal-dialog {margin-top:12%;width:60%;}
 @media(min-width:992px) {
 	.navbar {
 	    height:93px;
