@@ -5,8 +5,8 @@
 	$exitform = '';
 	
 	define ( 'ROOT_DIR', dirname ( __FILE__ ) );
-	$sendto = "ivan@zabava-group.ru, salon@zabava-group.ru, fantasticos@mail.ru";
-	$subject  = "Обращение с SALONZABAVA.COM";
+	$sendto = "ivan@zabava-group.ru, salon@zabava-group.ru";
+	$subject  = "Обращение с Landing Page SALONZABAVA.COM";
 	
 	$headers  = "From: no-reply@zabava-group.ru\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
