@@ -148,10 +148,10 @@
 													<div class='subtitle'>По специальной цене 2990 руб</div>
 												</div>
 												<div class="form-group input">
-													<input type="name" class="form-control" name="name" id="name" placeholder="Ваше имя" required="required">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Ваше имя" required="required">
 												</div>
 												<div class="form-group input">
-													<input type="phone" class="form-control" name="phone" id="phone" placeholder="Ваш телефон" required="required">
+													<input type="text" class="form-control" name="phone" id="phone" placeholder="Ваш телефон" required="required">
 												</div>
 												<div class="form-group input">
 													<button id="s0" type="submit" class="btn btn-default btn-confirm">Записаться</button>
@@ -264,10 +264,10 @@
 												</div>
 												<form role="form" class='form' action='mail.php' method='post'>
 										        	<div class="form-group input">
-												    	<input type="name" class="form-control" name="name" id="InputName" placeholder="Ваше имя" required="required">
+												    	<input type="text" class="form-control" name="name" id="InputName" placeholder="Ваше имя" required="required">
 												    </div>
 													<div class="form-group input">
-														<input type="phone" class="form-control" name="phone" id="InputPhone" placeholder="Ваш телефон" required="required">
+														<input type="text" class="form-control" name="phone" id="InputPhone" placeholder="Ваш телефон" required="required">
 									  				</div>
 									  				<div class="form-group input">
 									  					<button id="s2" type="submit" class="btn btn-default btn-confirm">Записаться</button>
@@ -840,7 +840,6 @@
 				}
 				//alert(w);
 			}	
-			
 			$( document ).ready(function() {
 				heightAdjust();
 				            
@@ -876,40 +875,40 @@
 			secondAnimation();
 		});
 		$( document ).on( 'click', '.carousel-control', function () {
-					if ($(this).data('slide')=='next') {
-						if ($('.navbar-nav li.active').data('slideTo')==1) {
-							mainAnimation();
-							secondAnimation();
-						}
-					}
-					if ($(this).data('slide')=='prev') {
-						if ($('.navbar-nav li.active').data('slideTo')==1) {
-							mainAnimation();
-							secondAnimation();
-						}
-					}
-				});
+			if ($(this).data('slide')=='next') {
+				if ($('.navbar-nav li.active').data('slideTo')==1) {
+					mainAnimation();
+					secondAnimation();
+				}
+			}
+			if ($(this).data('slide')=='prev') {
+				if ($('.navbar-nav li.active').data('slideTo')==1) {
+					mainAnimation();
+					secondAnimation();
+				}
+			}
+		});
 			
 				
-	            $( document ).on( 'click', '.navbar-nav li', function () {
-		            $('.navbar-nav li').each(function() {
-			            $(this).removeClass('active');
-			        });
-		            $(this).addClass('active');
-		            $(this).addClass('visited');
-		        });
+	    $( document ).on( 'click', '.navbar-nav li', function () {
+		    $('.navbar-nav li').each(function() {
+			    $(this).removeClass('active');
+			});
+		    $(this).addClass('active');
+		    $(this).addClass('visited');
+		});
 		        
-		        $(function(){
-		    		$('#myCarousel').on('slid.bs.carousel', function () {
-			    		var carouselData = $(this).data('bs.carousel');
-		      			var currentIndex = carouselData.getActiveIndex();
+		$(function(){
+		    $('#myCarousel').on('slid.bs.carousel', function () {
+			    var carouselData = $(this).data('bs.carousel');
+		      	var currentIndex = carouselData.getActiveIndex();
 		      			
-		      			var nextIndex = currentIndex;
-		      			if (nextIndex == 6) {
-			      			nextIndex = 0;
-		      			}
-		      			$('.navbar-nav li').each(function() {
-			      			$(this).removeClass('active');
+		      	var nextIndex = currentIndex;
+		      	if (nextIndex == 6) {
+			      	nextIndex = 0;
+		      	}
+		      	$('.navbar-nav li').each(function() {
+			    	$(this).removeClass('active');
 			      			if ($(this).data('slideTo')==nextIndex) {
 				      			$(this).addClass('active');	
 				      			$(this).addClass('visited');
@@ -978,25 +977,77 @@
 					});
 		</script>
 		<script type='text/javascript'>
-		    jQuery(function($){
-		        $('form').submit(function() { 
-		            var datastr = $(this).serialize();
-		            $.ajax({
-		                type: 'post',
-		                url:'mail.php',
-		                data:datastr,
-		                dataType:'json',
-		                success:response,
-		                error:response
-		            });
+			function getCookie(name) {
+                        var matches = document.cookie.match(new RegExp(
+                            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+                        ));
+                        return matches ? decodeURIComponent(matches[1]) : undefined;
+            }
+                    
+            function setCookie(name, value, options) {
+                        options = options || {};
+                        var expires = options.expires;
+                        if (typeof expires == "number" && expires) {
+                            var d = new Date();
+                            d.setTime(d.getTime() + expires * 1000);
+                            expires = options.expires = d;
+                        }
+                        if (expires && expires.toUTCString) {
+                            options.expires = expires.toUTCString();
+                        }
+                        value = encodeURIComponent(value);
+                        var updatedCookie = name + "=" + value;
+                        for (var propName in options) {
+                            updatedCookie += "; " + propName;
+                            var propValue = options[propName];
+                            if (propValue !== true) {
+                              updatedCookie += "=" + propValue;
+                            }
+                        }
+                        document.cookie = updatedCookie;
+                    }
+            function deleteCookie(name) {
+                        setCookie(name, "", {
+                          expires: -1
+                        })
+            }
+			$( document ).ready(function() {
+				//deleteCookie("visited");
+			});
+			jQuery(function($){
+			    $('form').submit(function() { 
+				    if (!getCookie("visited")) {
+			            var datastr = $(this).serialize();		            
+			            $.ajax({
+			                type: 'post',
+			                url:'mail.php',
+			                data:datastr,
+			                dataType:'json',
+			                success:response,
+			                error:response
+			            });
+			        } else {				    	
+						$('form').removeAttr('action');
+						$('input[type="text"]').attr('disabled','disabled');
+						
+						$('input[type="submit"]').addClass('disabled'); // Disables visually
+						$('input[type="submit"]').prop('disabled', true); // Disables visually + functionally
+						
+						$('.modal-body').html('<h1>Вы уже отправили заявку<br/>Мы свяжемся с Вами</h1>');
+						$('#Modal').modal();
+				    }    
 		            return false;
 		        });
 		        function response (resp) { 
-			        if((resp['status']=='200') && (resp['statusText']=='OK')) {
-				        $('.modal-body').html(resp['responseText']);
-				        $('#Modal').modal();
-			        }
-		            return false;
+			    	
+				    if((resp['status']=='200') && (resp['statusText']=='OK')) {
+					    $('.modal-body').html(resp['responseText']);
+					    $('#Modal').modal();
+					    setCookie('visited', '1', '/');
+					    $('input[type="text"]').attr('disabled', 'disabled');
+						$('input[type="submit"]').addClass('disabled');
+				    }
+				    return false;
 		        }   
 		    });
 		</script>
