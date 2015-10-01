@@ -1012,12 +1012,11 @@
                         })
             }
 			$( document ).ready(function() {
-				//deleteCookie("visited");
+				deleteCookie("visited");
 			});
 			jQuery(function($){
 			    $('form').submit(function() { 
-				    if (!getCookie("visited")) {
-			            var datastr = $(this).serialize();		            
+				       var datastr = $(this).serialize();		            
 			            $.ajax({
 			                type: 'post',
 			                url:'mail.php',
@@ -1026,16 +1025,7 @@
 			                success:response,
 			                error:response
 			            });
-			        } else {				    	
-						$('form').removeAttr('action');
-						$('input[type="text"]').attr('disabled','disabled');
-						
-						$('input[type="submit"]').addClass('disabled'); // Disables visually
-						$('input[type="submit"]').prop('disabled', true); // Disables visually + functionally
-						
-						$('.modal-body').html('<h1>Вы уже отправили заявку<br/>Мы свяжемся с Вами</h1>');
-						$('#Modal').modal();
-				    }    
+			      
 		            return false;
 		        });
 		        function response (resp) { 
@@ -1043,9 +1033,7 @@
 				    if((resp['status']=='200') && (resp['statusText']=='OK')) {
 					    $('.modal-body').html(resp['responseText']);
 					    $('#Modal').modal();
-					    setCookie('visited', '1', '/');
-					    $('input[type="text"]').attr('disabled', 'disabled');
-						$('input[type="submit"]').addClass('disabled');
+					    
 				    }
 				    return false;
 		        }   
